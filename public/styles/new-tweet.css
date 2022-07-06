@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Bungee';
+}
+
+button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+textarea {
+  background-color: #f4f1ec;
+  border: 0;
+  height: 0;
+  border-bottom: 5px solid #545149;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none; /*remove the resize handle on the bottom right*/
+
+  padding: 0;
+}
