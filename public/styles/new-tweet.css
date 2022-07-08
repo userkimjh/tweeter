@@ -35,5 +35,10 @@ textarea {
 
   resize: none; /*remove the resize handle on the bottom right*/
 
-  padding: 0;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.over-count {
+  color: red;
 }
