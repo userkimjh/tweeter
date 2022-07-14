@@ -4,7 +4,7 @@ and align-items properties are helpful for centering things if you're using Flex
 The name should be centered below the avatar
 The background-color should be a different colour than the nav and the body */
 
-header {
+.main-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,10 +13,18 @@ header {
   width: 100%;
   background-color: #d99823;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  margin-top: 120px;
 
 }
 
-#header-user-name {
-  font-family: 'Source Sans Pro';
+.header-user-name {
+  font-weight:normal;
   color: #ffff;
+}
+
+@media (min-width: 1024px) {
+  .main-header{
+    width: 30%;
+    margin-top: 20px;
+  }
 }

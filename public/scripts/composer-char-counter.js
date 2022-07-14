@@ -4,6 +4,7 @@ $(document).ready(function() {
     const $textArea = $(this);
     const remainingLength = 140 - $textArea.val().length;
     $textArea
+      .parent()
       .next()
       .children('.counter')
       .text(remainingLength)

@@ -5,9 +5,14 @@
   padding: auto;
 }
 
+.new-tweet {
+  display: none;
+}
+
 .form {
   display: flex;
   flex-direction: column;
+  padding: 0 0 50px 0;
 }
 
 .form-submit {
@@ -24,7 +29,7 @@ button {
 textarea {
   background-color: #f4f1ec;
   border: 0;
-  height: 0;
+  height: 35px;
   border-bottom: 5px solid #545149;
   overflow: auto;
   outline: none;
@@ -34,11 +39,36 @@ textarea {
   box-shadow: none;
 
   resize: none; /*remove the resize handle on the bottom right*/
-
-  padding: 10px;
-  padding-bottom: 10px;
+  width: 100%;
 }
 
+.text-area-margin {
+  margin: 10px 0 10px 0;
+
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
 .over-count {
   color: red;
+}
+
+.error-message{
+  display: none;
+  margin: 30px 0 30px 0;
+  padding: 10px;
+  color: red;
+  border: 5px solid red;
+  width: 100%;
+  font-size: 1.3em;
+
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 60%;
+  }
 }
